@@ -17,7 +17,7 @@ https://bentwi.skykopf.com/api
 
 ### 1. **Data Store**
 
-#### `POST /bentwi/store/set`
+### `POST /bentwi/store/set`
 
 Stores custom data for a specified `tile` and authenticates with the `bentwiToken`.
 
