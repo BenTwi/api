@@ -36,7 +36,7 @@ Stores custom data for a specified `tile` and authenticates with the `bentwiToke
 
 Then you should get the response:
 //collapse section
-
+```json
 {
   "ID": "API2OF_RESPONSE",
   "CODE": 200,
@@ -48,14 +48,14 @@ Then you should get the response:
 
 Retrieves stored data for a specified tile.
 
-//code block
+```json
 {
   "tile": "example",
   "bentwiToken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 
 A response from this could look like that:
-//collapse section
+```json
 {
   "ID": "API2OF_RESPONSE",
   "CODE": 200,
@@ -85,7 +85,7 @@ Retrieves the stream state for a Twitch user by their ID or username.
         username: Twitch Username
         Supports multiple users by adding additional username or id parameters.
 
-//code block
+
 /bentwi/streamstate/?id=942417144
 /bentwi/streamstate/?username=skytro_pixl
 /bentwi/streamstate/?username=byseli&username=dpommeslord
@@ -93,20 +93,20 @@ Retrieves the stream state for a Twitch user by their ID or username.
 
 ---
 
-### 3. **The real sh!t**
+### 3. **User Sensetive Endpoints**
 
 #### `POST /bentwi/userAccess`
 
 Retrieves user access details by checking for bentwiToken. Verifies if the user has ultraAccess and returns associated Twitch credentials if found.
 
-//code block
+```json
 {
   "bentwiToken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 
 
 then you will receive this response
-//collapse section
+```json
 {
   "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   "oAuthPlan": "PSYCHOPATHIC",
@@ -142,7 +142,7 @@ Retrieves Twitch user information by userID or username.
 ### **Error Handeling**
 
 BenTwi will provide API errors the same way for all endpoints
-
+```json
 {
 	"ID": "API2OF_ERROR",
 	"CODE": 418,
