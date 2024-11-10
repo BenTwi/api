@@ -106,6 +106,8 @@ Retrieves user access details by checking for bentwiToken. Verifies if the user 
 
 
 then you will receive this response
+
+
 ```json
 {
   "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
