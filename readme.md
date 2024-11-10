@@ -15,9 +15,9 @@ https://bentwi.skykopf.com/api
 
 ## Endpoints
 
-### 1. **Store Data**
+### 1. **Data Store**
 
-#### `POST /bentwi/store/set`
+## `POST /bentwi/store/set`
 
 Stores custom data for a specified `tile` and authenticates with the `bentwiToken`.
 
@@ -44,9 +44,7 @@ Then you should get the response:
   "DATA": {}
 }
 
----
-
-POST /bentwi/store/get
+## `POST /bentwi/store/get`
 
 Retrieves stored data for a specified tile.
 
@@ -78,7 +76,7 @@ A response from this could look like that:
 
 ### 2. **Receive Data**
 
-GET /bentwi/streamstate
+## `GET /bentwi/streamstate`
 
 Retrieves the stream state for a Twitch user by their ID or username.
 
