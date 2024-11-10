@@ -95,7 +95,7 @@ Retrieves the stream state for a Twitch user by their ID or username.
 
 ### 3. **The real sh!t**
 
-POST /bentwi/userAccess
+#### `POST /bentwi/userAccess`
 
 Retrieves user access details by checking for bentwiToken. Verifies if the user has ultraAccess and returns associated Twitch credentials if found.
 
@@ -118,12 +118,12 @@ then you will receive this response
 
 ### 4. **We live in an EMULATION**
 
-GET /bentwi/emulate
+#### `POST /bentwi/emulate`
 
 Provides access to the emulation API. Currently, this endpoint is disabled and may be removed in the future.
 
 5. Get Twitch User
-GET /twitch/getUser
+#### `GET /twitch/getUser`
 
 Retrieves Twitch user information by userID or username.
 
